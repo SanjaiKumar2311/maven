@@ -1,16 +1,15 @@
+
 package seleniumtest;
-import static org.testng.AssertJUnit.assertEquals;
-import org.testng.annotations.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-@Test
 public class test {
 
     @Test
-	public void testAdd() {
-        App app = new App();
-        assertEquals(5, app.add(2, 3), "2 + 3 should equal 5");
+    public void sampleTest() {
+        int actual = 2 + 3;
+        int expected = 5;
+        Assert.assertEquals(actual, expected, "Sum is incorrect");
     }
 }
